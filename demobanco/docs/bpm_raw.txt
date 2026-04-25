@@ -1,9 +1,0 @@
-graph TD
-    A[Solicitar Número de Tarjeta] --> B[Solicitar Cuenta Bancaria]
-    B --> C[Solicitar RFC del Cliente]
-    C --> D[Solicitar Monto de Transacción]
-    D --> E[Verificar Límite Diario]
-    E -->|Mayor| F[Asignar Mensaje de Rechazo]
-    E -->|No Mayor| G[Asignar Mensaje de Aprobación]
-    F --> H[Mostrar Respuesta]
-    G --> H
