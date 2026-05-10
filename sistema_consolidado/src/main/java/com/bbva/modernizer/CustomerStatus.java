@@ -1,0 +1,23 @@
+package com.bbva.modernizer;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
+
+public enum CustomerStatus {
+    CUST_ACTIVE("A"),
+    CUST_BLOCKED("B"),
+    CUST_CLOSED("C");
+
+    private final String value;
+
+    CustomerStatus(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
+}
